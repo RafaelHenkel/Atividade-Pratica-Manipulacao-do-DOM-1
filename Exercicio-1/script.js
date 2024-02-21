@@ -11,6 +11,5 @@ const funcaoBotao = () => {
   const nomeUsuario = prompt("Digite seu nome");
 
   const pegarParagrafo = document.getElementsByTagName("p");
-  pegarParagrafo[0].innerText =
-    "E ai" + nomeUsuario + "! Você está deixando o seu site dinâmico.";
+  pegarParagrafo[0].innerText = `E ai ${nomeUsuario}! Você está deixando o seu site dinâmico.`;
 };

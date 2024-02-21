@@ -12,3 +12,15 @@
 // Ao clicar no botão de Incrementar novamente o parágrafo deve
 // aparecer com a mensagem "O contador está com 1 cliques" e ir
 // atualizando conforme o usuário for clicando para incrementar.
+let contador = 0;
+const addCliques = () => {
+  contador++;
+  const mostrarContador = document.getElementsByTagName("p");
+  mostrarContador[0].innerText = `O contador esta com ${contador} cliques`;
+};
+
+const remCliques = () => {
+  contador = 0;
+  const mostrarContador = document.getElementsByTagName("p");
+  mostrarContador[0].innerText = ``;
+};
